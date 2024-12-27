@@ -40,16 +40,16 @@ com.colorapp
 
 ## Key Layers
 
-1. # Data Layer (data/)
+# 1.  Data Layer (data/)
 firebase/FirebaseService.kt: Manages interactions with Firebase Realtime Database.
 local/: Contains the Room database (AppDatabase) and DAO (ColorDao) for local data storage.
 repository/ColorRepositoryImpl.kt: Implements the repository interface for data operations, including syncing with Firebase.
 
-2. # Domain Layer (domain/)
+# 2.  Domain Layer (domain/)
 model/ColorEntity.kt: Defines the data model for a color entity.
 repository/ColorRepository.kt: Declares an interface for the repository to abstract data operations.
 
-3. # Presentation Layer (presentation/)
+# 3. # Presentation Layer (presentation/)
 components/: Reusable UI components, such as ColorCard and IconCard.
 pages/: Composable screens, including the main app layout and the grid of colors.
 viewmodel/: Manages UI state and business logic, including ColorViewModel and its factory (ColorViewModelFactory).
